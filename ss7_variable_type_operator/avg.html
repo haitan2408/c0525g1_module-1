@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="math">
+<input type="number" id="phy">
+<input type="number" id="cher">
+<button id="btn" value="=" >Tính</button>
+<script>
+    document.getElementById("btn").addEventListener("click", function () {
+        let math = +document.getElementById("math").value;
+        let phy = +document.getElementById("phy").value;
+        let cher = +document.getElementById("cher").value;
+        let avg = (math + phy + cher)/3;
+        alert(avg)
+    })
+</script>
+</body>
+</html>
