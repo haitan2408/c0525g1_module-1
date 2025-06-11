@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let den = prompt("Nhập màu đèn: ")
+
+    // if(den === "đỏ") {
+    //     alert("Dừng lại")
+    // } else if(den === "vàng") {
+    //     let truDen = confirm("Trụ đèn có giây hay không?")
+    //     if(truDen) {
+    //         alert("Dừng lại")
+    //     } else {
+    //         alert("Đi chậm")
+    //     }
+    // } else if(den === "xanh") {
+    //     alert("Đi tiếp")
+    // } else {
+    //     alert("Nhập sai màu của đèn")
+    // }
+
+    switch (den) {
+        case "đỏ":
+            alert("Dừng lại")
+            break;
+        case "vàng":
+            let truDen = confirm("Trụ đèn có giây hay không?")
+            if (truDen) {
+                alert("Dừng lại")
+            } else {
+                alert("Đi chậm")
+            }
+            break;
+        case "xanh":
+            alert("Đi tiếp")
+            break;
+        default:
+            alert("Nhập sai màu của đèn")
+    }
+</script>
+</body>
+</html>
